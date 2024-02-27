@@ -10,5 +10,6 @@ export class SalesTaxService {
     const amount = (typeof value === 'string') ?
       parseFloat(value) : value;
     return (amount || 0) * this.rateService.getRate('VAT');
+
   }
 }
